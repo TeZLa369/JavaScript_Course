@@ -75,9 +75,10 @@ console.log("OBJECT: ", obj) //^ name got changed
 // we can change the data as our wish like "let a = 3" can be changed to "a=null" or " a = 'string' ", etc.
 
 
+
+
 //! 4
 //^ TYPE COERCION (== vs ===)
-
 //* TYPE COERCION: one type will get automatically converted to another
 console.log("TYPE COERCION: ", "5" + 1) //^ it converted the number to string and then concatinated since it saw the + sign
 console.log("5" - 1); //^ since '-' only subtracts so 5 string gets converted to number
@@ -89,7 +90,7 @@ console.log("5" - 1); //^ since '-' only subtracts so 5 string gets converted to
 console.log("Falsy: ", !!NaN, !!null, !!0); //^ can be checked by adding !! before the value
 console.log("Truthy: ", !!1, !!2, !!3);
 
+
 if (null) { } // Js sees it as: if(false){}
 if (1) { } // Js sees it as: if(true){}
-
 
