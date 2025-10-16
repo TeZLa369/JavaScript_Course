@@ -152,3 +152,14 @@ function totalScore(...val) {
 }
 
 totalScore(45, 87, 43, 98, 57);
+
+
+// ^ Reusable discount calculator
+function discountCal(discount) {
+    return function (price) {
+        return price - price * (discount / 100);
+    }
+}
+
+let ten = discountCal(10);
+console.log(ten(200))
