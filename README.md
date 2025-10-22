@@ -6,5 +6,5 @@ If someone is reading this, feel free to clone this and I will be really happy i
 Each folder will have three files:
 1. index.html
 2. script.js
-3. script2.js which is same as script.js but it has been enhanced by ChatGpt
+3. script2.js which is same as script.js but it has been enhanced by ChatGpt (except in Event Handling folder)
 
