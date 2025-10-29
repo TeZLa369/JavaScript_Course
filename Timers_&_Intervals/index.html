@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timers and Intervals</title>
+    <style>
+      body {
+        user-select: none;
+        font-family: Orbitron;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        height: 100%;
+        background-color: black;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #363636;
+        height: 100vh;
+        font-size: 200px;
+      }
+
+      img {
+        border-radius: 65%;
+        color: aliceblue;
+        height: 80px;
+        width: 80px;
+      }
+      .btnPause {
+        display: none;
+      }
+      .btnPlay {
+        display: none;
+      }
+      .columnClass {
+        visibility: hidden;
+      }
+      .second1 {
+        display: none;
+      }
+      .hour1 {
+        display: none;
+      }
+      .minute1 {
+        color: aliceblue;
+        display: none;
+      }
+      span:hover:not(#blink1):not(#blink2) {
+        font-size: 220px;
+        transition: all 0.5s;
+      }
+
+      span:not(:hover):not(#blink1):not(#blink2) {
+        font-size: 200px;
+        transition: all 0.5s;
+      }
+      .timeDiv {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div id="timeDiv">
+        <span id="hour1">0</span><span class="hour2">0</span>
+        <span id="blink1"> : </span>
+        <span id="minute1">0</span><span class="minute2">0</span>
+        <span id="blink2"> : </span>
+        <span id="second1">0</span><span class="second2">0</span>
+      </div>
+      <div id="play"><img src="play-button.png" alt="" /></div>
+      <div id="pause" class="btnPause"><img src="pause.png" alt="" /></div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
