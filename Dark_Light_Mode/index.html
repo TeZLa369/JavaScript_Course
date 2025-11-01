@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body.dark {
+        background-color: rgb(29, 29, 29);
+        color: rgb(234, 245, 255);
+      }
+      body.light {
+        color: rgb(29, 29, 29);
+        background-color: rgb(234, 245, 255);
+      }
+      .btnLight {
+        margin-left: 12px;
+        height: 20px;
+        width: 100px;
+        border-radius: 14px;
+        padding: 15px;
+        text-align: center;
+        line-height: 20px;
+        background-color: rgb(230, 230, 230);
+        box-shadow: 0px 2px 4px rgb(35, 33, 33);
+      }
+      .btnLight:hover {
+        height: 25px;
+        width: 105px;
+        text-align: center;
+        line-height: 25px;
+        transition: all 0.5s;
+      }
+      .btnDark {
+        margin-left: 12px;
+        height: 20px;
+        width: 100px;
+        color: rgb(255, 255, 255);
+        border-radius: 14px;
+        padding: 15px;
+        text-align: center;
+        line-height: 20px;
+        background-color: rgb(59, 61, 72);
+        box-shadow: 0px 2px 4px rgb(189, 189, 189);
+      }
+      .btnDark:hover {
+        height: 25px;
+        width: 105px;
+        text-align: center;
+        line-height: 25px;
+        transition: all 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>WELCOME</h1></div>
+    <div id="btn" class="btnLight">Toggle Theme</div>
+    <script src="script.js"></script>
+  </body>
+</html>
